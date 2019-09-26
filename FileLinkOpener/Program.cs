@@ -7,6 +7,8 @@ namespace FileLinkOpener
 {
     internal class Program
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(APPLICATION_TITLE);
+
         private const string URI_SCHEME_PREFIX = "flo://";
 
         private const string APPLICATION_TITLE = "FileLinkOpener";
@@ -29,11 +31,10 @@ namespace FileLinkOpener
             }
             catch (OptionException e)
             {
-                Console.WriteLine(APPLICATION_TITLE + ":");
-                Console.WriteLine(e.Message);
+                log.Error(e.Message);
                 if (verbose)
                 {
-                    Console.WriteLine(e.StackTrace);
+                    log.Debug(e.StackTrace);
                 }
                 Console.WriteLine("try flo --help for more information");
                 return;
@@ -49,9 +50,16 @@ namespace FileLinkOpener
             {
                 if (verbose)
                 {
-                    Console.WriteLine(s);
+                    log.Debug("path param: " + s);
                 }
-                Process.Start(s);
+                try
+                {
+                    Process.Start(s);
+                }
+                catch (Exception e)
+                {
+                    log.Error(e.Message, e);
+                }
             });
 
         }
