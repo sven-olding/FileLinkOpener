@@ -48,17 +48,15 @@ namespace FileLinkOpener
 
             extra.ForEach(s =>
             {
-                log.Debug("path param: " + s);
-
                 try
                 {
                     int idx = s.IndexOf(URI_SCHEME_PREFIX);
-                    log.Debug(idx);
                     String path = s;
                     if (idx > -1)
                     {
                         path = path.Substring(idx + URI_SCHEME_PREFIX.Length);
                     }
+                    path = System.Net.WebUtility.UrlDecode(path).Replace(@"\\", @"\");
                     log.Debug("path: " + path);
                     Process.Start(path);
                 }
