@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="16.3" version="16.3" Modules="simple" RootPath="." Language="en" Id="{86EF9519-E745-4E6D-8BA9-21D2AB687B3E}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;FixupComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_NDesk.Options.dll" Value="..\packages\NDesk.Options.0.2.1\lib"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_flo.exe" Value="..\FileLinkOpener\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_flo.exe.config" Value="..\FileLinkOpener\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_log.config" Value="..\FileLinkOpener\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_log4net.dll" Value="..\packages\log4net.2.0.8\lib\net45-full"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_NDesk.Options.dll" Value="NDesk.Options.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_flo.exe" Value="flo.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_flo.exe.config" Value="flo.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_log.config" Value="log.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_log4net.dll" Value="log4net.dll"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:3"/>
+    <ROW Property="Manufacturer" Value="GEDYS IntraWare"/>
+    <ROW Property="ProductCode" Value="1033:{15FE10D4-25EF-4877-A76B-6B0155781DE2} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="FileLinkOpener"/>
+    <ROW Property="ProductVersion" Value="0.0.1" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{5A6E938B-A9DE-496F-9081-452ADC466F33}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_PROPPATH_FILENAME_PERBUILD_flo.exe" ComponentId="{AE8E6D3E-694C-4C89-B9AC-88FAA170888E}" Directory_="APPDIR" Attributes="0" KeyPath="flo.exe"/>
+    <ROW Component="AI_PROPPATH_FILENAME_PERBUILD_log.config" ComponentId="{BBBB9B99-9B3D-44A3-88B3-CD586156EF4F}" Directory_="APPDIR" Attributes="0" KeyPath="log.config" Type="0"/>
+    <ROW Component="APPDIR" ComponentId="{35CC8B48-A3D3-467C-A036-2B52CF09DF91}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="DefaultIcon" ComponentId="{0E198999-E820-4387-BF42-9563A42E2137}" Directory_="APPDIR" Attributes="4" KeyPath="DefaultIcon"/>
+    <ROW Component="FileLinkOpener_PrimaryOutput" ComponentId="{1868B86E-0BE8-473B-89CE-D83CDEB33288}" Directory_="APPDIR" Attributes="0" KeyPath="flo.exe.config"/>
+    <ROW Component="ProductInformation" ComponentId="{3B5DED61-7372-4306-A92D-7C1E38FC60FD}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="URLProtocol" ComponentId="{3ED97DB5-CAA1-455E-A613-023E0A05E1EA}" Directory_="APPDIR" Attributes="4" KeyPath="URLProtocol"/>
+    <ROW Component="_" ComponentId="{60E5A278-B371-45F6-A056-3121E2449A5E}" Directory_="APPDIR" Attributes="4" KeyPath="_"/>
+    <ROW Component="__1" ComponentId="{B7964EFC-DFB4-40EB-86CC-E65ED2D51E4E}" Directory_="APPDIR" Attributes="4" KeyPath="__1"/>
+    <ROW Component="__2" ComponentId="{1884F777-FF6A-4AB0-AC4B-7F0B76DE4B56}" Directory_="APPDIR" Attributes="4" KeyPath="__2"/>
+    <ROW Component="command" ComponentId="{871A8D67-9999-479E-824E-2DEAE9969633}" Directory_="APPDIR" Attributes="4" KeyPath="command"/>
+    <ROW Component="flo" ComponentId="{C3D25C3E-F2C6-4C80-A722-995367F6CE49}" Directory_="APPDIR" Attributes="4" KeyPath="flo"/>
+    <ROW Component="open" ComponentId="{9D1915AE-5188-4ACB-A0F8-E651089F7B64}" Directory_="APPDIR" Attributes="4" KeyPath="open"/>
+    <ROW Component="shell" ComponentId="{EE514992-17AC-4AD9-AA76-196D5A22378D}" Directory_="APPDIR" Attributes="4" KeyPath="shell"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="flo.exe" Component_="AI_PROPPATH_FILENAME_PERBUILD_flo.exe" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_flo.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_flo.exe&gt;" SelfReg="false" DigSign="true"/>
+    <ROW File="flo.exe.config" Component_="FileLinkOpener_PrimaryOutput" FileName="FLOEXE~1.CON|[|AI_PROPPATH_FILENAME_PERBUILD_flo.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_flo.exe.config&gt;" SelfReg="false"/>
+    <ROW File="log4net.dll" Component_="AI_PROPPATH_FILENAME_PERBUILD_log.config" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_log4net.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_log4net.dll&gt;" SelfReg="false"/>
+    <ROW File="NDesk.Options.dll" Component_="AI_PROPPATH_FILENAME_PERBUILD_log.config" FileName="NDESKO~1.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_NDesk.Options.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_NDesk.Options.dll&gt;" SelfReg="false"/>
+    <ROW File="log.config" Component_="AI_PROPPATH_FILENAME_PERBUILD_log.config" FileName="LOG~1.CON|[|AI_PROPPATH_FILENAME_PERBUILD_log.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_log.config&gt;" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_NDesk.Options.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_NDesk.Options.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_NDesk.Options.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_flo.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_flo.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_flo.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_flo.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_flo.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_flo.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_log.config" Path="[|AI_PROPPATH_DIR_PERBUILD_log.config]\[|AI_PROPPATH_FILENAME_PERBUILD_log.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_log4net.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_log4net.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_log4net.dll]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[AppDataFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="FileLinkOpener_PrimaryOutput"/>
+    <ROW Feature_="MainFeature" Component_="_"/>
+    <ROW Feature_="MainFeature" Component_="__1"/>
+    <ROW Feature_="MainFeature" Component_="__2"/>
+    <ROW Feature_="MainFeature" Component_="flo"/>
+    <ROW Feature_="MainFeature" Component_="DefaultIcon"/>
+    <ROW Feature_="MainFeature" Component_="shell"/>
+    <ROW Feature_="MainFeature" Component_="open"/>
+    <ROW Feature_="MainFeature" Component_="command"/>
+    <ROW Feature_="MainFeature" Component_="AI_PROPPATH_FILENAME_PERBUILD_flo.exe"/>
+    <ROW Feature_="MainFeature" Component_="AI_PROPPATH_FILENAME_PERBUILD_log.config"/>
+    <ROW Feature_="MainFeature" Component_="URLProtocol"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="DefaultIcon" Root="0" Key="flo\DefaultIcon" Name="*" Component_="DefaultIcon"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="URLProtocol" Root="0" Key="flo" Name="URL Protocol" Component_="URLProtocol"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+    <ROW Registry="_" Root="0" Key="flo" Value="URL:FileLinkOpener flo Protocol Handler" Component_="_"/>
+    <ROW Registry="__1" Root="0" Key="flo\DefaultIcon" Value="[#flo.exe]" Component_="__1"/>
+    <ROW Registry="__2" Root="0" Key="flo\shell\open\command" Value="[#flo.exe] -v &quot;%1&quot;" Component_="__2"/>
+    <ROW Registry="command" Root="0" Key="flo\shell\open\command" Name="*" Component_="command"/>
+    <ROW Registry="flo" Root="0" Key="flo" Name="*" Component_="flo"/>
+    <ROW Registry="open" Root="0" Key="flo\shell\open" Name="*" Component_="open"/>
+    <ROW Registry="shell" Root="0" Key="flo\shell" Name="*" Component_="shell"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.VsProjectComponent">
+    <ROW ProjectId="{ce1c24e6-c8d4-4011-9799-24df71ab6030}" ProjectName="FileLinkOpener" OutputGroup="PrimaryOutput" OutputFile="flo.exe"/>
+    <ROW ProjectId="{ce1c24e6-c8d4-4011-9799-24df71ab6030}" ProjectName="FileLinkOpener" OutputGroup="PrimaryOutput" OutputFile="flo.exe.config"/>
+    <ROW ProjectId="{ce1c24e6-c8d4-4011-9799-24df71ab6030}" ProjectName="FileLinkOpener" OutputGroup="References" OutputFile="log4net.dll"/>
+    <ROW ProjectId="{ce1c24e6-c8d4-4011-9799-24df71ab6030}" ProjectName="FileLinkOpener" OutputGroup="References" OutputFile="NDesk.Options.dll"/>
+    <ROW ProjectId="{ce1c24e6-c8d4-4011-9799-24df71ab6030}" ProjectName="FileLinkOpener" OutputGroup="ContentOutput" OutputFile="log.config"/>
+  </COMPONENT>
+</DOCUMENT>
