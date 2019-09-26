@@ -24,6 +24,7 @@ namespace FileLinkOpener
                 {"h|help|?", "show help message", v => showHelp = v != null}
             };
 
+
             List<string> extra;
             try
             {
@@ -31,14 +32,13 @@ namespace FileLinkOpener
             }
             catch (OptionException e)
             {
-                log.Error(e.Message);
-                if (verbose)
-                {
-                    log.Debug(e.StackTrace);
-                }
+                log.Error(e.Message, e);
                 Console.WriteLine("try flo --help for more information");
                 return;
             }
+
+            if (verbose)
+                EnableVerboseLogging();
 
             if (showHelp)
             {
@@ -48,13 +48,19 @@ namespace FileLinkOpener
 
             extra.ForEach(s =>
             {
-                if (verbose)
-                {
-                    log.Debug("path param: " + s);
-                }
+                log.Debug("path param: " + s);
+
                 try
                 {
-                    Process.Start(s);
+                    int idx = s.IndexOf(URI_SCHEME_PREFIX);
+                    log.Debug(idx);
+                    String path = s;
+                    if (idx > -1)
+                    {
+                        path = path.Substring(idx + URI_SCHEME_PREFIX.Length);
+                    }
+                    log.Debug("path: " + path);
+                    Process.Start(path);
                 }
                 catch (Exception e)
                 {
@@ -62,6 +68,28 @@ namespace FileLinkOpener
                 }
             });
 
+        }
+
+        private static void EnableVerboseLogging()
+        {
+            log4net.Repository.ILoggerRepository[] repositories = log4net.LogManager.GetAllRepositories();
+
+            //Configure all loggers to be at the debug level.
+            foreach (log4net.Repository.ILoggerRepository repository in repositories)
+            {
+                repository.Threshold = repository.LevelMap["DEBUG"];
+                log4net.Repository.Hierarchy.Hierarchy hier = (log4net.Repository.Hierarchy.Hierarchy)repository;
+                log4net.Core.ILogger[] loggers = hier.GetCurrentLoggers();
+                foreach (log4net.Core.ILogger logger in loggers)
+                {
+                    ((log4net.Repository.Hierarchy.Logger)logger).Level = hier.LevelMap["DEBUG"];
+                }
+            }
+
+            //Configure the root logger.
+            log4net.Repository.Hierarchy.Hierarchy h = (log4net.Repository.Hierarchy.Hierarchy)log4net.LogManager.GetRepository();
+            log4net.Repository.Hierarchy.Logger rootLogger = h.Root;
+            rootLogger.Level = h.LevelMap["DEBUG"];
         }
 
         private static void ShowHelp(OptionSet p)
