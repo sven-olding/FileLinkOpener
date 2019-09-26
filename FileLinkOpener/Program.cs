@@ -1,6 +1,7 @@
 ﻿using NDesk.Options;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace FileLinkOpener
 {
@@ -44,10 +45,15 @@ namespace FileLinkOpener
                 return;
             }
 
-            if (verbose)
+            extra.ForEach(s =>
             {
-                extra.ForEach(s => Console.WriteLine(s));
-            }
+                if (verbose)
+                {
+                    Console.WriteLine(s);
+                }
+                Process.Start(s);
+            });
+
         }
 
         private static void ShowHelp(OptionSet p)
