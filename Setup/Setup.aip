@@ -15,7 +15,7 @@
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_flo.exe.config" Value="flo.exe.config"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_log.config" Value="log.config"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_log4net.dll" Value="log4net.dll"/>
-    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:3"/>
+    <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPNOREPAIR" Value="1"/>
     <ROW Property="Manufacturer" Value="GEDYS IntraWare"/>
@@ -136,7 +136,7 @@
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
     <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
     <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
-    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[AppDataFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
     <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
   </COMPONENT>
@@ -183,7 +183,7 @@
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
     <ROW Registry="_" Root="0" Key="flo" Value="URL:FileLinkOpener flo Protocol Handler" Component_="_"/>
     <ROW Registry="__1" Root="0" Key="flo\DefaultIcon" Value="[#flo.exe]" Component_="__1"/>
-    <ROW Registry="__2" Root="0" Key="flo\shell\open\command" Value="[#flo.exe] -v &quot;%1&quot;" Component_="__2"/>
+    <ROW Registry="__2" Root="0" Key="flo\shell\open\command" Value="[#flo.exe] &quot;%1&quot;" Component_="__2"/>
     <ROW Registry="command" Root="0" Key="flo\shell\open\command" Name="*" Component_="command"/>
     <ROW Registry="flo" Root="0" Key="flo" Name="*" Component_="flo"/>
     <ROW Registry="open" Root="0" Key="flo\shell\open" Name="*" Component_="open"/>
